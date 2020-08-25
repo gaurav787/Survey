@@ -1,96 +1,52 @@
 ﻿<script src="~/Scripts/FreeSurveyMaker/free-survey-maker.js"></script>
 
+<div>
+    <span class="add-question"><span class="addition-sign">+</span>Add Question</span>
+</div>
 
-@*<div class="col-sm-7 questionPanelStyling" id="1598341545017">
-        <div style="margin-left:20px;">
-            <div class="row appendDynamicLabel">
-                <label>asdf</label>
-            </div>
-            <div class="row appendDynamicOptions" style="margin-top:10px;">
-                <div>
-                    <input type="radio" name="1598341545016">
-                    <label style="margin-left:5px;">1</label>
-                </div>
-                <div>
-                    <input type="radio" name="1598341545016">
-                    <label style="margin-left:5px;">2</label>
-                </div>
-            </div>
-        </div>
-    </div>*@
+<div class="blank-baked-question-panel">
 
-@*<div id="createDiv">
-        <span class="question-creator-link" id="questionCreatorLink">+ Create a question</span>
-    </div>*@
+</div>
+@*<div class="col-sm-7 baked-question">
+    <label class="user-question">Do you like vada pav</label>
+    <div class="user-option-placeholder">
 
-@*<div class="col-sm-7 questionPanelStyling">
-        <div style="margin-left:20px;">
-            <div class="row appendDynamicLabel">
-                <label>Do you like Vada Pav</label>
-            </div>
-            <div class="row appendDynamicOptions" style="margin-top:10px;">
-                <div>
-                    <input type="radio" name="radio"><label style="margin-left:5px;">Yes</label>
-                </div>
-                <div style="margin-top:5px;">
-                    <input type="radio" name="radio"><label style="margin-left:5px;">No</label>
-                </div>
-            </div>
-        </div>
-    </div>*@
-
-@*<div class='questionPanelClass' id="questionPanel">
-    <div class='col-sm-7 questionPanelStyling'>
-        <div class='row'>
-            <div class='col-sm-6'>
-                <textarea class='textAreaQuestion' id="blankTextArea" placeholder='Question' cols='100'>
-                </textarea>
-            </div>
-            <div class='col-sm-6'>
-                <div class='select'>
-                    <select name='slct' id='slct'><option value='1'>Multiple Choice</option><option value='2'>Long Paragraph</option><option value='3'>Short Paragraph</option></select>" +
-                </div>
-            </div>
-        </div>
-        <div class='row' style='margin-top:15px;'>
-            <div class='col-sm-12 radioPanel' id="defaultRadioOptionPanel" + idGen.rand + ">
-                <div class='form-check' id='defaultRadioOptionAdder' style='margin-top:10px;'>
-                    <input type='radio' />
-                    <label style='margin-left:5px;' id="addMultiOption" class=addMoreOption>Add option</label>
-                </div>
-            </div>
-        </div>
-        <hr />
-        <div class='row'>
-            <div class='col-sm-6'>
-                <button class='btn btn-primary btnSubmit' id="submit">Submit</button>
-            </div>
-            <div class='col-sm-6'>
-                <span class='glyphicon glyphicon-trash deletePanelClass' id='deletePanelId' style='float:right; cursor:pointer;' aria-hidden='true'></span>
-            </div>
-        </div>
     </div>
 </div>*@
 
-
-<div style="display:grid">
-    <div id="blankTitlePanel"></div>
-
-    <div class="col-sm-7 questionPanelStyling" id="TitlePanel">
-        <div>
-            <input type="text" id="title" placeholder="Create Title" style="border-top:none;border-right:none;border-left:none;outline:none" />
+<div class="col-sm-7 question-editing-panel" id="UniqueId">
+    <div class="row">
+        <div class="col-sm-6">
+            <textarea placeholder="Question" class="text-area"></textarea>
         </div>
-        <div style="margin-top:5px;">
-            <input type="text" id="shortDesc" placeholder="Add Short Description" style="border-top:none;border-right:none;border-left:none;outline:none" />
+        <div class="select">
+            <select name='slct' id='option-dropdown'>
+                <option value='1'>Multiple choice</option>
+                <option value='2'>Paragraph</option>
+                <option value='3'>Checkboxes</option>
+            </select>
         </div>
     </div>
-    <div id="readyQuestions" style="display:grid;">
+    <div class="row mg-top-15 all-options-placeholder">
+        <div class="mg-left-15 options-placeholder"></div>
+        <div class="mg-left-15 mg-top-10 default-multi-choice-option">
+            <input type="radio" disabled />
+            <label class="mg-left-3 add-multichoice-option">Add option</label>
+        </div>
+        <div class="mg-left-15 mg-top-10 default-paragraph">
+            <input type="text" placeholder="Paragraph" disabled class="paragraph-input">
+        </div>
     </div>
-    <div id="blankPanel" style="display:grid;">
-    </div>
-    <div id='createDiv' class='col-sm-7' style='text-align:center;margin-top:15px;'>
-        <span class='question-creator-link' id='questionCreatorLink' style='font-weight:bold;font-size:12px;'><span style='font-size:35px;'>+</span>Add question</span>
+    <hr />
+    <div class="row">
+        <div class="col-sm-6">
+            <button class="btn btn-default btn-submit">Submit</button>
+        </div>
+        <div class="col-sm-6">
+            <span class='glyphicon glyphicon-trash trash-can' aria-hidden='true'></span>
+        </div>
     </div>
 </div>
+
 
 
