@@ -1,0 +1,95 @@
+﻿#checkBoxPanel {
+    display: none;
+}
+
+.question-creator-link {
+    color: #999;
+}
+
+    .question-creator-link:hover {
+        cursor: pointer;
+        color: black;
+    }
+
+.questionPanelStyling {
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 5px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    -webkit-box-shadow: 1px 1px 1px #999;
+    -moz-box-shadow: 1px 1px 1px #999;
+    box-shadow: 1px 1px 1px #999;
+}
+
+    .questionPanelStyling:hover {
+        border-bottom: 5px solid #32CD32;
+        border-right: 1px solid #32CD32;
+    }
+
+.textAreaQuestion {
+    height: 80px;
+    resize: none;
+    outline: none;
+    padding: 10px;
+    line-height: 1.5;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+
+.customDropDown {
+    margin-left: 30px;
+}
+/* Reset Select */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+    /* Remove IE arrow */
+    select::-ms-expand {
+        display: none;
+    }
+/* Custom Select */
+.select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #999;
+}
+
+select {
+    flex: 1;
+    padding: 0 .5em;
+    color: black;
+    cursor: pointer;
+}
+/* Arrow */
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    /*background: #34495e;*/
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+}
+/* Transition */
+.select:hover::after {
+    color: #4285f4;
+}
